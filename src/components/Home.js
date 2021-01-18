@@ -8,15 +8,16 @@ render() {
 
 return (
     <div>
-      
+    
        <h1>Bank of React</h1>
-
+       <AccountBalance accountBalance = {this.props.accountBalance} />
+      <br/>
       <Link to ="/UsersProfile">Users Profile</Link>
       <br/>
       <Link to ="/Debit">Debit</Link>
       <br/>
       <Link to ="/Credit">Credit</Link>
-      <AccountBalance accountBalance = {this.props.accountBalance} />
+      
     </div>
 );
 }

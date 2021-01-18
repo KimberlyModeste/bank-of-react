@@ -69,6 +69,7 @@ constructor(){
 
     
       <Router>
+          <img scr='pictures/Bank.jpg' alt = "Bank"></img>
           <Route exact path = "/" render={HomeComponent} />
           <Route exact path = "/UsersProfile" render = {UserProfileComponent} />
           <Route exact path = "/login" render = {LogInComponent} />
