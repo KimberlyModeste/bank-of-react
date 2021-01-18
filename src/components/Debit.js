@@ -26,6 +26,7 @@ render()
         
         <div>
         <h1>Debits</h1>
+        
         <Link to ="/">Home</Link>
         {debitList}
         <h1>AccountBalance</h1>

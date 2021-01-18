@@ -5,6 +5,7 @@ import UsersProfile from './components/UsersProfile';
 import LogIn from './components/Login';
 import Debit from './components/Debit';
 import Credit from './components/Credit';
+import Bank from './pictures/Bank.jpg';
 import './random.css'
 
 //account balance should be my Debits subtracted from my Credits
@@ -69,12 +70,17 @@ constructor(){
 
     
       <Router>
-          <img scr='pictures/Bank.jpg' alt = "Bank"></img>
+        <table id="grid">
+         <tr><td><img id ="top" src={Bank} alt = "Bank"/></td></tr> 
+        <tr><td>
           <Route exact path = "/" render={HomeComponent} />
           <Route exact path = "/UsersProfile" render = {UserProfileComponent} />
           <Route exact path = "/login" render = {LogInComponent} />
           <Route exact path = "/Credit" render = {CreditComponet}/>
           <Route exact path = "/Debit" render = {DebitComponent}/>
+          </td>
+          </tr>
+          </table>
       </Router>
     );
   }

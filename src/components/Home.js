@@ -8,6 +8,7 @@ render() {
 
 return (
     <div>
+        
     
        <h1>Bank of React</h1>
        <AccountBalance accountBalance = {this.props.accountBalance} />
